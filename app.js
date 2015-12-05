@@ -1,13 +1,13 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');//ÊÕ²Ø¼ĞÍ¼±ê
-var logger = require('morgan');//ÈÕÖ¾¼ÇÂ¼Æ÷
-var cookieParser = require('cookie-parser');//´¦Àícookie
-var bodyParser = require('body-parser');//´¦ÀíÇëÇóÌå req.body
+var favicon = require('serve-favicon');//æ”¶è—å¤¹å›¾æ ‡
+var logger = require('morgan');//æ—¥å¿—è®°å½•å™¨
+var cookieParser = require('cookie-parser');//å¤„ç†cookie
+var bodyParser = require('body-parser');//å¤„ç†è¯·æ±‚ä½“ req.body
 
-var routes = require('./routes/index');//Ö÷Ò³Â·ÓÉ
+var routes = require('./routes/index');//ä¸»é¡µè·¯ç”±
 var users = require('./routes/users');
-
+require('./db');
 var app = express();
 
 // view engine setup
